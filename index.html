@@ -603,8 +603,8 @@ footer span{background:linear-gradient(135deg,var(--purple),var(--teal));-webkit
       <!-- Left: info links -->
       <div class="contact-info">
         <p>Have a project that needs a quality eye? Looking for a dedicated SQA Engineer? I'd love to hear from you!</p>
-        <a class="contact-link" href="mailto:mushahidhussain882@gmail.com">
-          <span>📧</span><span>mushahidhussain882@gmail.com</span>
+        <a class="contact-link" href="mailto:mushahid.hussain.work@gmail.com">
+          <span>📧</span><span>mushahid.hussain.work@gmail.com</span>
           <button class="copy-btn" id="copy-email-btn">Copy</button>
         </a>
         <a class="contact-link" href="https://linkedin.com/in/mushahyd" target="_blank">
@@ -861,7 +861,7 @@ document.getElementById('fact-btn').addEventListener('click', () => {
 document.getElementById('copy-email-btn').addEventListener('click', e => {
   e.preventDefault();
   e.stopPropagation();
-  navigator.clipboard.writeText('mushahidhussain882@gmail.com').then(() => {
+  navigator.clipboard.writeText('mushahid.hussain.work@gmail.com').then(() => {
     const btn = document.getElementById('copy-email-btn');
     btn.textContent = '✓ Copied';
     setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
@@ -945,7 +945,7 @@ document.getElementById('send-btn').addEventListener('click', async () => {
     console.error('EmailJS error:', err);
     const code = err?.status ? ` (code ${err.status})` : '';
     status.className = 'form-status error';
-    status.textContent = `❌ Send failed${code}. Please email directly: mushahidhussain882@gmail.com`;
+    status.textContent = `❌ Send failed${code}. Please email directly: mushahid.hussain.work@gmail.com`;
     showToast('❌ Send failed — please email directly.');
   } finally {
     btn.disabled = false;
